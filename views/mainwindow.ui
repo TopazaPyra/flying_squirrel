@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>734</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Flying Squirrel</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../img/flying_squirrel.ico</normaloff>../img/flying_squirrel.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>734</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionNewProject"/>
+    <addaction name="actionOpenProject"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuVues">
+    <property name="title">
+     <string>Vues</string>
+    </property>
+    <addaction name="actionDirect"/>
+    <addaction name="actionDelayed"/>
+    <addaction name="actionSettings"/>
+    <addaction name="actionVisualization"/>
+   </widget>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <addaction name="actionPreferences"/>
+   </widget>
+   <widget class="QMenu" name="menuAide">
+    <property name="title">
+     <string>Aide</string>
+    </property>
+    <addaction name="actionDocumentation"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuVideos">
+    <property name="title">
+     <string>Vidéos</string>
+    </property>
+    <addaction name="actionAddVideo"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuVues"/>
+   <addaction name="menuOptions"/>
+   <addaction name="menuAide"/>
+   <addaction name="menuVideos"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNewProject">
+   <property name="text">
+    <string>Nouveau projet</string>
+   </property>
+  </action>
+  <action name="actionOpenProject">
+   <property name="text">
+    <string>Ouvrir un projet</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Enregistrer</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionPreferences">
+   <property name="text">
+    <string>Préférences</string>
+   </property>
+  </action>
+  <action name="actionDocumentation">
+   <property name="text">
+    <string>Documentation</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>À propos de Flying Squirrel</string>
+   </property>
+  </action>
+  <action name="actionDirect">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Direct</string>
+   </property>
+  </action>
+  <action name="actionDelayed">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Différé</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Paramétrage</string>
+   </property>
+  </action>
+  <action name="actionVisualization">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Visualisation</string>
+   </property>
+  </action>
+  <action name="actionAddVideo">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Ajouter une vidéo</string>
+   </property>
+  </action>
+  <action name="actionManageVideos">
+   <property name="text">
+    <string>Gérer les vidéos</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
